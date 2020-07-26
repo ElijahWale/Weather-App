@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Just an image -->
@@ -15,50 +16,59 @@
     <section>
         <div class="container mt-4">
             <div class="row">
-                <div class="col-md-4">
-                    <form action="">
-                        <input type="text" placeholder="Enter Place" class="search-input">
-                        <button type="submit" class="btn btn-search mb-2 ">Search</button>
-                    </form>
-                    <div class="card text-center pt-3 pb-3 mb-3 mt-3">
-                        <img src="assets/011-cloud.png" alt="weather-icon" class="weather-icon">
-                        <h4 class="weather">It's a Lovely Day</h4>
-                        <h2 class="temp">0</h2>
-                        <div class="card_info d-flex justify-content-around mt-3">
-                            <p class="place">Place</p>
-                            <p class="date">Date</p>
+                <div class="col-md-4" >
+                    <div class="content" data-aos="fade-right" data-aos-delay="500"
+                    data-aos-offset="0">>
+                        <form action="">
+                            <input type="text" placeholder="Enter Place" class="search-input">
+                            <button type="submit" class="btn btn-search mb-2 ">Search</button>
+                        </form>
+                        <div class="card text-center pt-3 pb-3 mb-3 mt-3">
+                            <img src="assets/011-cloud.png" alt="weather-icon" class="weather-icon">
+                            <h4 class="weather">It's a Lovely Day</h4>
+                            <h2 class="temp">0</h2>
+                            <div class="card_info d-flex justify-content-around mt-3">
+                                <p class="place">Place</p>
+                                <p class="date">Date</p>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="col-md-8">
                     <div class="weather-data ">
                         <div class="all-cards">
-                            <div class="sm-card">
+                            <div class="sm-card" data-aos="fade-left" data-aos-delay="300"
+                            data-aos-offset="0">
                                 <img src="assets/sun.png" alt="sun-icon" class="icon">
                                 <p>Max</p>
                                 <h5 class="max-temp value"></h5>
                             </div>
-                            <div class="sm-card">
+                            <div class="sm-card" data-aos="fade-left" data-aos-delay="300"
+                            data-aos-offset="0">
                                 <img src="assets/climate.png" alt="" class="icon">
                                 <p>Min</p>
                                 <h5 class="min-temp value"></h5>
                             </div>
-                            <div class="sm-card">
+                            <div class="sm-card" data-aos="fade-left" data-aos-delay="300"
+                            data-aos-offset="0">
                                 <img src="assets/water.png" alt="" class="icon">
                                 <p>Humidity</p>
                                 <h5 class="humidity value"></h5>
                             </div>
-                            <div class="sm-card">
+                            <div class="sm-card" data-aos="fade-left" data-aos-delay="300"
+                            data-aos-offset="0">
                                 <img src="assets/017-wind.png" alt="" class="icon">
                                 <p>Wind Speed</p>
                                 <h5 class="wind value"></h5>
                             </div>
-                            <div class="sm-card">
+                            <div class="sm-card" data-aos="fade-left" data-aos-delay="300"
+                            data-aos-offset="0">
                                 <img src="assets/indicator.png" alt="" class="icon">
                                 <p>Pressure</p>
                                 <h5 class="pressure value"></h5>
                             </div> 
-                            <div class="weather-info text-center pt-3">
+                            <div class="weather-info text-center pt-3" data-aos="zoom-in">
                                 <h3>Get real time weather of any location in the world </h3>
                                 <h3 class="date"><span>CloudApp</span></h3>
                             </div>
@@ -76,5 +86,9 @@
         <p>Designed and Built by &#128156; <a href="www.twitter.com/Elijahcodes" class="bio-link">Elijahwale</a></p>   
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
